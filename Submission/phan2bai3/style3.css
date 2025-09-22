@@ -1,0 +1,72 @@
+div.container {
+    background-color: rgb(68, 68, 71);
+    width: 800px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 10px 30px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: rgb(206, 195, 195);
+    width: 750px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* header title, header form1 {
+    text-align: center;
+} */
+header form.form1 {
+    flex: 1;
+    padding: 15px;
+}
+header div.title {
+    flex: 3;
+    padding: 15px;
+}
+
+footer {
+    background-color: rgb(243, 243, 134);
+    width: 730px;
+    height: 25px;
+    padding: 10px;
+}
+
+.nav {
+    background-color: orange;
+    width: 740px;
+    height: 25px;
+    font-size: small;
+    padding: 10px 0 0 10px;
+}
+
+.sec {
+    background-color: green;
+    width: 750px;
+    /* height: 500px; */
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.sec div.banner {
+    width: 120px;
+    background-color: rgb(236, 236, 8);
+}
+
+.sec div.col1 {
+    width: 390px;
+    background-color: rgb(23, 224, 23);
+    padding: 10px;
+}
+
+.sec div.col2 {
+    width: 220px;
+    background-color: pink;
+    padding: 10px;
+}
+

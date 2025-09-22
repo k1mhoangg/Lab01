@@ -1,0 +1,102 @@
+div.root {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+/* Header */
+div.header {
+    background-color: gray;
+    width: 800px;
+    height: 50px;
+}
+
+div.header > p {
+    margin: 5px;
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+}
+/* Navigation */
+nav.nav {
+    background-color: blue;
+    width: 800px;
+    height: 50px;
+}
+
+nav.nav > div.container {
+    margin: 15px 40px;
+}
+
+nav.nav > div.container > a {
+    color: white;
+    text-decoration:underline;
+    margin-right: 10px;
+}
+
+/* Content */
+div.content {
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+}
+/* Sidebar  */
+div.sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+}
+div.sidebar > div.block1 {
+    background-color: yellow;
+    height: 150px;
+}
+
+div.sidebar > div.block2 {
+    background-color: gray;
+    height: 150px;
+}
+
+div.sidebar > div.block1 > ul.unordered-list, div.block2 > ul.unordered-list {
+    margin-top: -0;
+    margin-left: -10px;
+}
+
+div.sidebar > div.block2 > ul.unordered-list > li > a, div.block1 > ul.unordered-list > li > a {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* Main */
+div.main {
+    display: flex;
+    flex-direction: column;
+}
+
+div.main > div.block1 > p {
+    margin: 10px;
+}
+
+div.main > div.alter {
+    display: flex;
+    flex-direction: row;
+    width: 550px;
+}
+
+div.main > div.alter > div.block1 {
+    background-color: green;
+    width: 50%;
+    height: 128px;
+}
+
+div.main > div.alter > div.block2 {
+    background-color: red;
+    width: 50%;
+    height: 128px;
+}
+/* Footer */
+div.footer {
+    background-color: blue;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    width: 800px;
+}

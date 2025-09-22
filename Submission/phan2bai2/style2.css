@@ -1,0 +1,65 @@
+.logo {
+    border: 5px solid red;
+    border-radius: 20px;
+}
+
+.shadow-text {
+    font-weight: bold;
+    color: brown;
+    text-shadow: 5px 5px 0 blue;
+}
+
+.dropcap-text::first-letter {
+  float: left;
+  font-size: 3em;
+  line-height: 1;
+  margin-right: 8px;
+  font-weight: bold;
+  color: brown;
+}
+
+
+span.bold-underline {
+    font-size:x-large;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+span.underline {
+    text-decoration: underline;
+    font-style: italic;
+    font-size: x-large;
+}
+
+.title {
+    color: brown;
+}
+
+a.clicked-link {
+    color: red;
+    text-decoration: underline;
+}
+
+a.unclicked-link {
+    color: blue;
+    text-decoration: underline;
+}
+
+.table {
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  border: 1px solid #333; 
+  padding: 4px 8px;
+  text-align: center;
+}
+.shadow-link {
+    color: rgb(41, 111, 97);
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgb(0,0,0); /* mờ xung quanh */}
+.normal-link {
+    color: blue;
+    text-decoration: underline;
+}
