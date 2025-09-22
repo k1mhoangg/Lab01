@@ -1,13 +1,16 @@
 * {
     font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
 }
 
 .root {
     width: 1000px;
     margin: 0 auto;
-    border: 1px solid black;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
+.title {
+    font-size: 25px;
+    font-weight: bolder;
 }
 
 /* HEADER */
@@ -98,7 +101,7 @@ div.nav .right-item {
     margin-left: 10px;
 }
 
-.content-page1 .category {
+.category {
     color: rgb(230, 142, 11);
     font-weight: bold;
 }
@@ -141,6 +144,7 @@ img {
     font-size: 25px;
     font-weight: bolder;
     text-align: center;
+    border-bottom: none;
 }
 
 /* SUBSCRIBE SECTION */
@@ -194,7 +198,7 @@ img {
         "title title"
         "left-item right-item";
     grid-template-columns: 1fr 1fr;
-    grid-auto-rows: 39.5px auto;
+    grid-auto-rows: 52px auto;
     background-color: rgb(245, 245, 245);
 }
 
@@ -210,21 +214,404 @@ img {
 .war-news .title {
     grid-area: title;
     border-bottom: 3px solid black;
-
+    margin-left: 10px;
+    padding: 10px 0;
 }
 
-/* 
-.war-news .title . {
-    font-size: 25px;
+.war-news .title .content {
+    display: inline-block;
+    width: 80%;
     font-weight: bolder;
-    border-bottom: 3px solid black;
-    margin-left: 10px;
-} */
+    font-size: 20px;
+}
+
+.war-news .title .view-all {
+    background-color: black;
+    color: white;
+    padding: 5px 5px 0 5px;
+}
 
 .war-news .left-item {
     grid-area: left-item;
+    padding-top: 0;
 }
 
 .war-news .right-item {
     grid-area: right-item;
+    padding-top: 0;
+}
+
+/* TITLE */
+div.title {
+    border-bottom: 3px solid black;
+    font-weight: bolder;
+    margin-bottom: 10px;
+
+}
+
+/* CONTENT PAGE3 */
+.content-page3 {
+    display: flex;
+    flex-direction: row;
+}
+
+.technology-news {
+    flex: 4 1 0;
+    padding: 10px;
+}
+
+.destinations-news {
+    flex: 1 1 0;
+    padding: 10px;
+}
+
+/* TECHNOLOGY NEWS */
+.technology-news .content {
+    display: flex;
+    flex-direction: column;
+}
+
+.technology-news .content .first-row {
+    display: flex;
+    flex-direction: row;
+    height: 350px;
+}
+
+.technology-news .content .first-row .first-ele {
+    width: 50%;
+    margin-right: 5px;
+    background-image: url("images04/no_img.jpg");
+    background-position: center;
+    position: relative;
+}
+
+.technology-news .content .first-row .second-ele {
+    width: 50%;
+    margin-left: 5px;
+    background-image: url("images04/no_img.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.technology-news .content .second-row {
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    padding: 10px 0;
+}
+
+.technology-news .content .second-row .first-ele {
+    flex: 1 1 0;
+    background-image: url("images04/no_img.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.technology-news .content .second-row .second-ele {
+    flex: 1 1 0;
+    margin: 0 10px;
+    background-image: url("images04/no_img.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.technology-news .content .second-row .third-ele {
+    flex: 1 1 0;
+    background-image: url("images04/no_img.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* TECHNOLOGY NEWS text handle */
+.technology-news .content .indicator-content {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.2);
+    color: white;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background: linear-gradient(to top,
+            rgba(0, 0, 0, 0.8) 0%,
+            rgba(0, 0, 0, 0) 75%);
+
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.technology-news .content .technology-indicator {
+    display: inline-block;
+    padding: 5px;
+    margin-bottom: 5px;
+    background-color: rgb(255, 174, 0);
+    color: white;
+}
+
+.technology-news .content .exclusive-indicator {
+    display: inline-block;
+
+    padding: 5px;
+    background-color: red;
+    color: white;
+}
+
+/* DESTINATIONS NEWS */
+.destinations-news .indicator-content {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0;
+}
+
+.destinations-news .indicator-content .content {
+    width: 70%;
+
+}
+
+.destinations-news .indicator-content .side-img {
+    width: 30%;
+    background-image: url("images04/no_img.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* CONTENT PAGE4 */
+.content-page4 {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-page4 .title {
+    text-align: center;
+}
+
+.content-page4 .first-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.content-page4 .first-row * {
+    flex: 1 1 0;
+    margin: 0 5px;
+}
+
+.content-page4 .first-row .indicator-content {
+    padding-top: 40px;
+}
+
+.content-page4 .first-row img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 5px;
+}
+
+.content-page4 .second-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.content-page4 .second-row * {
+    flex: 1 1 0;
+    margin: 0 5px;
+}
+
+/* LOAD MORE  */
+
+.load-more {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 20px 400px;
+    cursor: pointer;
+}
+
+/* CONTENT PAGE5 */
+.content-page5 {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    width: 100%;
+}
+
+.content-page5 .articles-news {
+    width: 70%;
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.content-page5 .sidebar {
+    width: 30%;
+    padding: 10px;
+    background-color: rgb(245, 245, 245);
+    margin: 10px;
+}
+
+.content-page5 .articles-news .title {
+    color: rgb(230, 142, 11);
+}
+
+.btn-subcribe {
+    margin: 10px 0;
+    padding: 10px;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+.content-page5 .view-all {
+    margin: 10px 70px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.pagination-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.pagination {
+    list-style: none;
+    display: flex;
+    gap: 5px;
+    padding: 0;
+    margin: 0;
+}
+
+.pagination li {
+    display: inline-block;
+}
+
+.pagination li a {
+    display: block;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #333;
+    transition: all 0.2s;
+}
+
+.pagination li a:hover {
+    background-color: #eee;
+}
+
+.pagination li.active a {
+    background-color: rgb(3, 25, 126);
+    color: #fff;
+    border-color: #333;
+}
+
+.pagination li.dots {
+    padding: 8px 12px;
+    color: #999;
+    cursor: default;
+    border: none;
+}
+
+.page-info {
+    font-size: 14px;
+    color: #666;
+    margin-left: auto;
+}
+
+/* FOOTER */
+.footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .footer-content {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.footer .sitemap {
+    flex: 1 1 0;
+    padding: 0 10px;
+}
+
+.footer .footer-content .company,
+.latest,
+.popular {
+    flex: 3 1 0;
+    padding: 0 10px;
+}
+
+.footer .copyright {
+    text-align: center;
+    padding: 10px;
+}
+
+.footer .back-to-top {
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    padding: 10px;
+    background-color: rgb(0, 195, 255);
+    margin: 0 10px 0 940px;
+    text-align: center;
+}
+
+.footer .back-to-top:hover {
+    background-color: rgb(0, 140, 255);
+    cursor: pointer;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer .contact-info {
+    text-align: center;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+}
+
+.footer .contact-info .wt {
+    margin: 0 30px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.footer .contact-info i {
+    background-color: white;
+    margin: 5px;
+    padding: 5px;
+    color: black;
+}
+
+.footer .footer-nav {
+    text-align: center;
+}
+
+.footer .footer-nav span {
+    display: inline-block;
+    margin: 10px 5px;
+    font-weight: bold;
+}
+
+.footer .footer-nav span:nth-child(1) {
+    color: rgb(230, 142, 11);
+}
+
+.footer .footer-content .title {
+    font-size: 25px;
+    font-weight: bolder;
+    display: inline-block;
+    margin-bottom: 15px;
 }
